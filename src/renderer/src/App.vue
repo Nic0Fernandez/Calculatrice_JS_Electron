@@ -15,24 +15,32 @@ import { reactive, ref } from 'vue'
 
 const screen = ref('')
 const buttons = [1, 2, 3, '+', 4, 5, 6, '-', 7, 8, 9, '*', 0, 'C', '=', '/']
+var flag = 0
 
 function onButtonClick(button) {
-  var flag = 0
   if (button === 'C') {
     screen.value = ''
+    flag = 0
   } else if (button === '=') {
     flag = 1
     screen.value = math.evaluate(screen.value).toString()
     console.log('Évaluation de:', screen.value)
+    console.log(flag)
   } else {
-    if (flag === 1) {
-      if (button === '+' || button === '-' || button === '*' || button === '/'){
+    if (button === '+' || button === '-' || button === '*' || button === '/') {
+      screen.value += button
+      flag = 0
+    } else {
+      console.log(flag)
+      if (flag === 1) {
+        screen.value = ''
         screen.value += button
       } else {
-        screen.value = ''
+        flag = 0
         screen.value += button
       }
     }
   }
 }
+
 </script>
