@@ -1,6 +1,6 @@
 <template>
   <div class="calculatrice">
-    <div id="result" class="screen">{{ screen }}</div>
+    <div id="result" class="screen madimi-one-regular">{{ screen }}</div>
     <div class="calculatrice-keys">
       <button v-for="button in buttons" :key="button" @click="onButtonClick">
         {{ button }}

@@ -4,7 +4,7 @@ body {
   justify-content: center;
   margin: 0;
   padding: 0;
-  background-color: rgb(63, 56, 56);
+  background-color: #f2f2f2;
   height: 100vh;
   width:100vw;
   box-sizing: border-box;
@@ -46,6 +46,13 @@ body {
   border: none;
   background-color: #e0e0e0;
   border-radius: 5px;
+}
+
+.madimi-one-regular {
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font
+  font-style: normal;
 }
 
 .screen {

@@ -1,6 +1,9 @@
-# calculatrice_electron_app
+# calculatrice_electron_app avec Electron et Vue
 
 An Electron application with Vue
+
+![Alt text](/calculatrice_electron_app/calculatrice.png?raw=true )
+
 
 ## Recommended IDE Setup
 
