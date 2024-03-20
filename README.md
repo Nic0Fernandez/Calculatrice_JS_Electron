@@ -2,7 +2,7 @@
 
 An Electron application with Vue
 
-![Alt text](/calculatrice_electron_app/calculatrice.png?raw=true )
+![](/calculatrice_electron_app/calculatrice.png)
 
 
 ## Recommended IDE Setup
